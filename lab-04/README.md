@@ -1,8 +1,15 @@
 # Lab 4: Registration, login and JWT
 
-**Name:** Pola Karunya Naidu · **Registration Number:** [Your Registration Number] · **Section:** [Your Section]  
-**Course:** Backend Development Fundamentals · Year II Term II · Aurora  
-**Faculty:** Joel Prashanth D  
+| Field | Details |
+| :--- | :--- |
+| **Student Name** | Pola Karunya Naidu |
+| **Registration Number** | [Your Registration Number] |
+| **Section** | [Your Section] |
+| **Course** | Backend Development Fundamentals |
+| **Academic Term** | Year II Term II |
+| **Institution** | Aurora |
+| **Faculty** | Yugandhar |
+| **Module** | Authentication and user management |  
 
 ---
 

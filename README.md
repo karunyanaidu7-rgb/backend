@@ -1,9 +1,12 @@
 # Backend Development Fundamentals — Course Laboratory Repository
 
-**Student:** Pola Karunya Naidu  
-**Faculty:** Yugandhar   
-**Institution:** Aurora  
-**Academic Year:** Year II Term II  
+| Field | Details |
+| :--- | :--- |
+| **Student Name** | Pola Karunya Naidu |
+| **Faculty** | Yugandhar |
+| **Institution** | Aurora |
+| **Academic Term** | Year II Term II |
+| **Course** | Backend Development Fundamentals |
 
 ---
 
