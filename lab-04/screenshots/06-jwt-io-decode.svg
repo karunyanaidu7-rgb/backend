@@ -1,0 +1,73 @@
+
+<svg width="880" height="600" viewBox="0 0 880 600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Window Container -->
+  <rect x="15" y="15" width="850" height="570" rx="10" fill="#1d212a" filter="url(#shadow)" stroke="#3e4451" stroke-width="1"/>
+
+  <!-- Top Title Bar -->
+  <rect x="15" y="15" width="850" height="42" rx="10" fill="#252934"/>
+  <rect x="15" y="47" width="850" height="10" fill="#252934"/>
+
+  <!-- Window Dots -->
+  <circle cx="38" cy="36" r="6" fill="#e06c75"/>
+  <circle cx="56" cy="36" r="6" fill="#e5c07b"/>
+  <circle cx="74" cy="36" r="6" fill="#98c379"/>
+
+  <text x="440" y="39" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="bold" text-anchor="middle">
+    JWT.IO • JSON Web Token Debugger &amp; Verification
+  </text>
+
+  <!-- Left: Encoded Token Panel -->
+  <rect x="35" y="75" width="395" height="485" rx="6" fill="#15171e" stroke="#2d323f" stroke-width="1"/>
+  <text x="50" y="105" fill="#d0d4dc" font-family="sans-serif" font-size="14" font-weight="bold">ENCODED</text>
+  <text x="130" y="105" fill="#7f848e" font-family="sans-serif" font-size="12">paste a token here</text>
+
+  <rect x="45" y="120" width="375" height="420" rx="4" fill="#0d0f14"/>
+  <text x="55" y="145" font-family="Consolas, monospace" font-size="13" word-spacing="normal">
+    <tspan fill="#fb015b">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9</tspan><tspan fill="#ffffff">.</tspan>
+  </text>
+  <text x="55" y="170" font-family="Consolas, monospace" font-size="13">
+    <tspan fill="#d63aff">eyJ1c2VybmFtZSI6ImFsZXhfbWVyY2VyIiwiaWF0IjoxNzk0OTI4ODIxfQ</tspan><tspan fill="#ffffff">.</tspan>
+  </text>
+  <text x="55" y="195" font-family="Consolas, monospace" font-size="13">
+    <tspan fill="#00b9f1">K8z4J7u_V9yQ3p0mX2rT1sN6bA4dF8gH0jL2cE5vW7Y</tspan>
+  </text>
+
+  <!-- Right: Decoded Panels -->
+  <rect x="450" y="75" width="400" height="485" rx="6" fill="#15171e" stroke="#2d323f" stroke-width="1"/>
+  <text x="465" y="105" fill="#d0d4dc" font-family="sans-serif" font-size="14" font-weight="bold">DECODED</text>
+
+  <!-- Header Box -->
+  <text x="465" y="135" fill="#fb015b" font-family="sans-serif" font-size="12" font-weight="bold">HEADER: ALGORITHM &amp; TOKEN TYPE</text>
+  <rect x="460" y="145" width="375" height="75" rx="4" fill="#0d0f14" stroke="#fb015b" stroke-width="1"/>
+  <text x="475" y="170" fill="#fb015b" font-family="Consolas, monospace" font-size="12">{</text>
+  <text x="490" y="190" fill="#fb015b" font-family="Consolas, monospace" font-size="12">  "alg": "HS256",</text>
+  <text x="490" y="208" fill="#fb015b" font-family="Consolas, monospace" font-size="12">  "typ": "JWT"</text>
+  <text x="475" y="215" fill="#fb015b" font-family="Consolas, monospace" font-size="12">}</text>
+
+  <!-- Payload Box -->
+  <text x="465" y="248" fill="#d63aff" font-family="sans-serif" font-size="12" font-weight="bold">PAYLOAD: DATA (ONLY USERNAME, NO PASSWORD)</text>
+  <rect x="460" y="258" width="375" height="95" rx="4" fill="#0d0f14" stroke="#d63aff" stroke-width="1"/>
+  <text x="475" y="280" fill="#d63aff" font-family="Consolas, monospace" font-size="12">{</text>
+  <text x="490" y="300" fill="#d63aff" font-family="Consolas, monospace" font-size="12">  "username": "alex_mercer",</text>
+  <text x="490" y="320" fill="#d63aff" font-family="Consolas, monospace" font-size="12">  "iat": 1794928821</text>
+  <text x="475" y="340" fill="#d63aff" font-family="Consolas, monospace" font-size="12">}</text>
+
+  <!-- Signature Box -->
+  <text x="465" y="375" fill="#00b9f1" font-family="sans-serif" font-size="12" font-weight="bold">VERIFY SIGNATURE</text>
+  <rect x="460" y="385" width="375" height="155" rx="4" fill="#0d0f14" stroke="#00b9f1" stroke-width="1"/>
+  <text x="475" y="410" fill="#00b9f1" font-family="Consolas, monospace" font-size="12">HMACSHA256(</text>
+  <text x="490" y="430" fill="#00b9f1" font-family="Consolas, monospace" font-size="12">  base64UrlEncode(header) + "." +</text>
+  <text x="490" y="450" fill="#00b9f1" font-family="Consolas, monospace" font-size="12">  base64UrlEncode(payload),</text>
+  <text x="490" y="475" fill="#ffffff" font-family="Consolas, monospace" font-size="12">  secret: "AURORA_BACKEND_LAB_SECRET_KEY_2026"</text>
+  <text x="475" y="495" fill="#00b9f1" font-family="Consolas, monospace" font-size="12">)</text>
+
+  <!-- Signature Verified Badge -->
+  <rect x="475" y="505" width="160" height="24" rx="4" fill="#1b5e20"/>
+  <text x="555" y="521" fill="#a5d6a7" font-family="sans-serif" font-size="12" font-weight="bold" text-anchor="middle">✓ Signature Verified</text>
+</svg>

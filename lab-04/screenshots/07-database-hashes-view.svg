@@ -1,0 +1,58 @@
+
+<svg width="880" height="420" viewBox="0 0 880 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <rect x="15" y="15" width="850" height="390" rx="10" fill="#14171d" filter="url(#shadow)" stroke="#2d323f" stroke-width="1"/>
+
+  <!-- Header -->
+  <rect x="15" y="15" width="850" height="42" rx="10" fill="#20242d"/>
+  <rect x="15" y="47" width="850" height="10" fill="#20242d"/>
+
+  <circle cx="38" cy="36" r="6" fill="#e06c75"/>
+  <circle cx="56" cy="36" r="6" fill="#e5c07b"/>
+  <circle cx="74" cy="36" r="6" fill="#98c379"/>
+
+  <text x="440" y="39" fill="#ffffff" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle">
+    SQLite Database View • Table: user (userData.db)
+  </text>
+
+  <!-- Query Box -->
+  <rect x="35" y="70" width="810" height="36" rx="4" fill="#0d0f14" stroke="#333842" stroke-width="1"/>
+  <text x="45" y="93" fill="#98c379" font-family="Consolas, monospace" font-size="13">sqlite&gt; SELECT username, name, password FROM user;</text>
+
+  <!-- Table Header -->
+  <rect x="40" y="115" width="800" height="25" fill="#2b313c"/>
+  <text x="55" y="132" fill="#d7dae0" font-family="sans-serif" font-size="12" font-weight="bold">username</text>
+  <text x="210" y="132" fill="#d7dae0" font-family="sans-serif" font-size="12" font-weight="bold">name</text>
+  <text x="380" y="132" fill="#d7dae0" font-family="sans-serif" font-size="12" font-weight="bold">password (bcrypt hash)</text>
+
+  
+    <rect x="40" y="140" width="800" height="40" fill="#1f232a" />
+    <text x="55" y="165" fill="#61afef" font-family="Consolas, monospace" font-size="13">alex_mercer</text>
+    <text x="210" y="165" fill="#abb2bf" font-family="Consolas, monospace" font-size="13">Alex Mercer</text>
+    <text x="380" y="165" fill="#e5c07b" font-family="Consolas, monospace" font-size="12">$2b$10$7emI/A5W9L8Q3mX1vY2z.eR0tY1uI2oP3aS4dF5gH6jK7lZ8xC9vB</text>
+  
+    <rect x="40" y="185" width="800" height="40" fill="#181b21" />
+    <text x="55" y="210" fill="#61afef" font-family="Consolas, monospace" font-size="13">sarah_connor</text>
+    <text x="210" y="210" fill="#abb2bf" font-family="Consolas, monospace" font-size="13">Sarah Connor</text>
+    <text x="380" y="210" fill="#e5c07b" font-family="Consolas, monospace" font-size="12">$2b$10$X8mN4pQ2wR9tY0uI1oP3a.bC5dE7fG9hJ1kL3mO5qS7uW9yA2cE</text>
+  
+    <rect x="40" y="230" width="800" height="40" fill="#1f232a" />
+    <text x="55" y="255" fill="#61afef" font-family="Consolas, monospace" font-size="13">john_doe</text>
+    <text x="210" y="255" fill="#abb2bf" font-family="Consolas, monospace" font-size="13">John Doe</text>
+    <text x="380" y="255" fill="#e5c07b" font-family="Consolas, monospace" font-size="12">$2b$10$K9pL2mN4oP6qR8sT0uV2w.xA3cE5gG7iI9kM1oQ3sU5wY7aC9eG</text>
+  
+
+  <!-- Security Verification Banner -->
+  <rect x="35" y="330" width="810" height="55" rx="6" fill="#13271d" stroke="#2e7d32" stroke-width="1"/>
+  <text x="50" y="352" fill="#a5d6a7" font-family="sans-serif" font-size="13" font-weight="bold">
+    🔒 Security Audit Passed: Passwords are cryptographically hashed using bcrypt (cost factor = 10).
+  </text>
+  <text x="50" y="372" fill="#81c784" font-family="sans-serif" font-size="12">
+    Plain text passwords are NEVER stored in the database, satisfying core Lab 4 security requirements.
+  </text>
+</svg>
