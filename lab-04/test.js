@@ -44,8 +44,9 @@ async function runTests() {
     process.exit(1);
   }
 
+  const uniqueSuffix = Date.now();
   const testUser = {
-    username: 'alex_mercer',
+    username: `alex_mercer_${uniqueSuffix}`,
     name: 'Alex Mercer',
     password: 'SuperSecretPassword123',
   };
