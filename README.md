@@ -1,7 +1,7 @@
 # Backend Development Fundamentals — Course Laboratory Repository
 
 **Student:** Pola Karunya Naidu  
-**Faculty:** Joel Prashanth D  
+**Faculty:** Yugandhar   
 **Institution:** Aurora  
 **Academic Year:** Year II Term II  
 
